@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const slugify = require('slugify')
-
+// model
 
 
 var posts = new mongoose.Schema({
