@@ -2,21 +2,29 @@ const { connection } = require("./model");
 const express = require("express");
 const app = express();
 const path = require("path");
-const expressHandlebars = require("express-handlebars");
 const methodOverride = require('method-override');
 
 const PostsController = require("./controllers/routes"); 
 
 
+
+const { engine } = require("express-handlebars");
+const methodOverride = require('method-override');
 app.use(express.static(__dirname + '/public/'));
 
-app.engine("hbs",expressHandlebars({
-    extname : "hbs",
+const PostsController = require("./controllers/routes"); 
+//okkk done
+
+app.use(express.static(__dirname + '/public/'));
+
+app.engine(
+  "handlebars",
+  engine({
+    extname: ".hbs",
     defaultLayout: false,
-    layoutsDir : __dirname + "/views/"
-    
-    
-}));
+    layoutDir: __dirname + "/views/",
+  })
+)
 
 app.set("view engine","hbs");
 
