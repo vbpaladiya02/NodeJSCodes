@@ -1,28 +1,21 @@
-# Python
-*.pyc
-*~
-__pycache__
-
-# Env
-.env
-myvenv/
-venv/
-
-
-
-# macOS
-._*
-.DS_Store
-.fseventsd
-.Spotlight-V100
-
-# Windows
-Thumbs.db*
-ehthumbs*.db
-[Dd]esktop.ini
-$RECYCLE.BIN/
-
-# Visual Studio
-.vscode/
-.history/
-*.code-workspace
+node_modules
+.idea
+storage/logs/error/*
+storage/logs/info/*
+!storage/logs/error/.gitkeep
+!storage/logs/info/.gitkeep
+public/image/*
+public/question/*
+!public/report/.gitkeep
+public/report/*
+public/templates/*
+!public/templates/.gitkeep
+public/uploads/files/*
+!public/uploads/files/.gitkeep
+public/uploads/img/*
+!public/uploads/img/.gitkeep
+public/document/batchUserList/*
+!public/document/batchUserList/.gitkeep
+package-lock.json
+exportXlsxFile.xlsx
+.nvmrc
